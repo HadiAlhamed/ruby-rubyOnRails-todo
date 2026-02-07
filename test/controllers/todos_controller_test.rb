@@ -18,12 +18,12 @@ class TodosControllerTest < ActionDispatch::IntegrationTest
   test "should create todo" do
     assert_difference("Todo.count") do
       # We add project_id here so the database validation passes
-      post todos_url, params: { 
-        todo: { 
-          description: @todo.description, 
-          name: @todo.name, 
-          project_id: @todo.project_id 
-        } 
+      post todos_url, params: {
+        todo: {
+          description: @todo.description,
+          name: @todo.name,
+          project_id: @todo.project_id
+        }
       }
     end
 
@@ -42,12 +42,12 @@ class TodosControllerTest < ActionDispatch::IntegrationTest
 
   test "should update todo" do
     # We add project_id here as well to ensure the update is valid
-    patch todo_url(@todo), params: { 
-      todo: { 
-        description: @todo.description, 
-        name: @todo.name, 
-        project_id: @todo.project_id 
-      } 
+    patch todo_url(@todo), params: {
+      todo: {
+        description: @todo.description,
+        name: @todo.name,
+        project_id: @todo.project_id
+      }
     }
     assert_redirected_to todo_url(@todo)
   end
