@@ -1,9 +1,9 @@
-# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
-
 one:
-  name: MyString
-  description: MyText
+  name: My Todo
+  description: My Text
+  project: one    # This links this todo to the 'one' project above
 
 two:
-  name: MyString
-  description: MyText
+  name: My Other Todo
+  description: My Other Text
+  project: two    # This links this todo to the 'two' project above
