@@ -1,5 +1,5 @@
 class AddActiveToProjects < ActiveRecord::Migration[8.1]
   def change
-    add_column :projects, :active, :boolean , default: true , null: false
+    add_column :projects, :active, :boolean, default: true, null: false
   end
 end
