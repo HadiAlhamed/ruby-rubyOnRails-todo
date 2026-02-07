@@ -1,4 +1,4 @@
-require "../application_system_test_case"
+require_relative "../application_system_test_case"
 
 class SkipChecksTest < ApplicationSystemTestCase
   # test "visiting the index" do
